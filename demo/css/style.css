@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'Trueno';
+    src: url(../media/fonts/Trueno-wml2.otf);
+}
+
+* {
+    font-family: 'Trueno', sans-serif;
+}
+
+.card {
+    width: 300px;
+}
+
+.slider {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider input {
+    display: none;
+}
+
+.slides {
+    width: 500vw;
+    transition-duration: 0.5s;
+}
+
+.slider-buttons {
+    bottom: 0;
+}
+
+.slider-buttons * {
+    width: 20px;
+    height: 20px;
+    border-radius: 45%;
+    background-color: #1db77b;
+}
+
+.slider input[id*='1']:checked ~ .slider-buttons *[for*='1'] {
+    background-color: #007547;
+}
+
+.slider input[id*='2']:checked ~ .slider-buttons *[for*='2'] {
+    background-color: #007547;
+}
+
+.slider input[id*='3']:checked ~ .slider-buttons *[for*='3'] {
+    background-color: #007547;
+}
+
+.slider input[id*='4']:checked ~ .slider-buttons *[for*='4'] {
+    background-color: #007547;
+}
+
+.slider input[id*='5']:checked ~ .slider-buttons *[for*='5'] {
+    background-color: #007547;
+}
+
+.slider input[id*='1']:checked ~ .slides {
+    margin-left: 0;
+}
+
+.slider input[id*='2']:checked ~ .slides {
+    margin-left: -100vw;
+}
+
+.slider input[id*='3']:checked ~ .slides {
+    margin-left: -200vw;
+}
+
+.slider input[id*='4']:checked ~ .slides {
+    margin-left: -300vw;
+}
+
+.slider input[id*='5']:checked ~ .slides {
+    margin-left: -400vw;
+}
+
+
